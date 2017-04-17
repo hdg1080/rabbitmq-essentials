@@ -1,6 +1,5 @@
 package rmqess.ch02;
 
-
 import java.io.Serializable;
 
 
@@ -8,12 +7,12 @@ import java.io.Serializable;
 public class Message implements Serializable {
 	
 	private static final long serialVersionUID = -4098151609470073353L;
-	private long senderId;
-	private long addresseeId;
+	private Long senderId;
+	private Long addresseeId;
 	private String subject;
 	private String content;
 	private String topic;
-	private long timeSend;
+	private Long timeSend;
 	
 	public Message() {
 		
@@ -30,7 +29,7 @@ public class Message implements Serializable {
 		
 	}
 	
-	public long getSenderId() {
+	public Long getSenderId() {
 		return senderId;
 	}
 
@@ -38,7 +37,7 @@ public class Message implements Serializable {
 		this.senderId = senderId;
 	}
 
-	public long getAddresseeId() {
+	public Long getAddresseeId() {
 		return addresseeId;
 	}
 
@@ -70,7 +69,7 @@ public class Message implements Serializable {
 		this.topic = topic;
 	}
 
-	public long getTimeSend() {
+	public Long getTimeSend() {
 		return timeSend;
 	}
 
